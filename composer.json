@@ -1,0 +1,57 @@
+{
+    "name": "tobento/app-validation",
+    "type": "library",
+    "description": "App validation support.",
+    "keywords": [
+        "tobento",
+        "package",
+        "app",
+        "validation",
+        "validator"
+    ],
+    "homepage": "https://www.tobento.ch",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tobias Strub",
+            "email": "info@tobento.ch",
+            "homepage": "https://www.tobento.ch"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.0",
+        "tobento/app": "^1.0",
+        "tobento/app-migration": "^1.0",
+        "tobento/service-validation": "^1.0",
+        "tobento/service-message": "^1.0.1"
+    },
+    "suggest": {
+        "tobento/app-translation": "Support for translating messages",
+        "tobento/app-http": "Support for Http validation"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "vimeo/psalm": "^4.0",
+        "tobento/app-translation": "^1.0",
+        "tobento/app-http": "^1.0.8",
+        "tobento/app-view": "^1.0.1",
+        "nyholm/psr7": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tobento\\App\\Validation\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tobento\\App\\Validation\\Test\\": "tests",
+            "Tobento\\App\\Http\\Test\\": "vendor/tobento/app-http/tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --testdox --colors=always",
+        "psalm": "vendor/bin/psalm"
+    }
+}
