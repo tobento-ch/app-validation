@@ -68,7 +68,11 @@ class ValidatorTranslations implements MigrationInterface
     public function install(): ActionsInterface
     {
         return new Actions(
-            new FilesCopy($this->files),
+            new FilesCopy(
+                files: $this->files,
+                type: 'trans',
+                description: 'Validator translation files.',
+            ),
         );
     }
 
@@ -80,7 +84,11 @@ class ValidatorTranslations implements MigrationInterface
     public function uninstall(): ActionsInterface
     {
         return new Actions(
-            new FilesDelete($this->files),
+            new FilesDelete(
+                files: $this->files,
+                type: 'trans',
+                description: 'Validator translation files.',
+            ),
         );
     }
 }
