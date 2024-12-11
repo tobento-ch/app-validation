@@ -2,6 +2,7 @@
     "The :attribute and :parameters[0] must match.": ":attribute muss mit :parameters[0] übereinstimmen.",
     "The :attribute cannot be empty.": ":attribute darf nicht leer sein.",
     "The :attribute cannot be null.": ":attribute darf nicht null sein.",
+    "The :attribute contains forbidden HTML code.": ":attribute enthält verbotenen HTML-Code.",
     "The :attribute does not match the format :parameters.": ":attribute stimmt nicht mit dem Format :parameters überein.",
     "The :attribute is invalid.": ":attribute ist ungültig.",
     "The :attribute is not a valid date.": ":attribute ist kein gültiges Datum.",
