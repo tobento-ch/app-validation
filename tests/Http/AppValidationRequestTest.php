@@ -236,7 +236,7 @@ class AppValidationRequestTest extends TestCase
 
         (new TestResponse($app->get(Http::class)->getResponse()))
             ->isStatusCode(302)
-            ->hasHeader('location', '/foo/create');
+            ->hasHeader('location', 'http://localhost/foo/create');
     }
     
     public function testValidationSuccess()
