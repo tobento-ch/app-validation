@@ -31,7 +31,7 @@ composer require tobento/app-validation
 
 ## Requirements
 
-- PHP 8.0 or greater
+- PHP 8.4 or greater
 
 # Documentation
 
@@ -52,7 +52,7 @@ The validator boot does the following:
 use Tobento\App\AppFactory;
 
 // Create the app
-$app = (new AppFactory())->createApp();
+$app = new AppFactory()->createApp();
 
 // Adding boots
 $app->boot(\Tobento\App\Validation\Boot\Validator::class);
@@ -74,7 +74,7 @@ use Tobento\App\AppFactory;
 use Tobento\Service\Validation\ValidatorInterface;
 
 // Create the app
-$app = (new AppFactory())->createApp();
+$app = new AppFactory()->createApp();
 
 // Add directories:
 $app->dirs()
@@ -126,7 +126,7 @@ use Tobento\App\AppFactory;
 use Tobento\Service\Validation\RulesInterface;
 
 // Create the app
-$app = (new AppFactory())->createApp();
+$app = new AppFactory()->createApp();
 
 // Add directories:
 $app->dirs()
@@ -162,7 +162,7 @@ composer require tobento/app-translation
 use Tobento\App\AppFactory;
 
 // Create the app
-$app = (new AppFactory())->createApp();
+$app = new AppFactory()->createApp();
 
 // Add directories:
 $app->dirs()
@@ -212,7 +212,7 @@ Next, make sure the following boots are defined:
 use Tobento\App\AppFactory;
 
 // Create the app
-$app = (new AppFactory())->createApp();
+$app = new AppFactory()->createApp();
 
 // Add directories:
 $app->dirs()
@@ -355,7 +355,7 @@ The http error handler boot does the following:
 use Tobento\App\AppFactory;
 
 // Create the app
-$app = (new AppFactory())->createApp();
+$app = new AppFactory()->createApp();
 
 // Adding boots
 $app->boot(\Tobento\App\Validation\Boot\HttpValidationErrorHandler::class);
